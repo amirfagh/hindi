@@ -1,0 +1,63 @@
+.header {
+    background-color: #36311F; /* Dark blue */
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+    border-bottom: 3px solid #59544B;
+    direction: rtl;
+  }
+  
+  .nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #cfe2f3;
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) { /* Tablets and smaller */
+    .nav-links {
+      flex-direction: column; /* Stack links vertically */
+      
+    }
+  
+    .nav-links li {
+      margin: 10px 0; /* Add space between links */
+    }
+  
+    .nav-link {
+      font-size: 1em; /* Slightly smaller font for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) { /* Phones */
+    .header {
+      padding: 15px 5px; /* Reduce padding for smaller screens */
+    }
+  
+    .nav-link {
+      font-size: 0.9em; /* Further reduce font size for phones */
+    }
+  }
+  

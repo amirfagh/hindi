@@ -1,0 +1,101 @@
+.footer {
+    background-color: #36311F; /* Dark blue for professional look */
+    color: white;
+    text-align: center;
+    direction: rtl; /* Set direction to right-to-left */
+    padding: 20px;
+    border-top: 3px solid #59544B; /* Gold border for emphasis */
+  }
+  
+  .footer p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center-align text and icons */
+  }
+  
+  .footer-link {
+    color: #cfe2f3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    color: white; /* Change to white on hover for better interactivity */
+  }
+  
+  /* Consistent spacing for icons */
+  .footer-icon {
+    color: #cfe2f3;
+    font-size: 1.4em; /* Default icon size */
+    margin-right: 8px; /* Space between icon and text */
+    margin-left: 8px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1024px) { /* Laptops and smaller */
+    .footer {
+      padding: 18px;
+      font-size: 1.1em; /* Slightly smaller font for medium screens */
+    }
+  
+    .footer p {
+      margin: 6px 0;
+      font-size: 1.1em;
+    }
+  
+    .footer-icon {
+      font-size: 1.3em; /* Adjust icon size */
+      margin-right: 6px; /* Adjust spacing */
+      margin-left: 6px;
+
+    }
+  }
+  
+  @media (max-width: 768px) { /* Tablets */
+    .footer {
+      padding: 15px;
+      font-size: 1em; /* Smaller font size for tablets */
+    }
+  
+    .footer p {
+      margin: 8px 0;
+      font-size: 1em;
+    }
+  
+    .footer-icon {
+      font-size: 1.2em; /* Adjust icon size */
+      margin-right: 6px; /* Consistent spacing */
+      margin-left: 6px;
+
+    }
+  
+    .footer-link {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 480px) { /* Phones */
+    .footer {
+      padding: 10px;
+      font-size: 0.9em; /* Smaller font size for phones */
+    }
+  
+    .footer p {
+      margin: 5px 0;
+      font-size: 0.9em;
+    }
+  
+    .footer-icon {
+      font-size: 1em; /* Smaller icon size */
+      margin-right: 5px; /* Adjust spacing for compact layout */
+      margin-left: 5px;
+
+    }
+  
+    .footer-link {
+      font-size: 0.9em;
+    }
+  }
+   
