@@ -1,16 +1,24 @@
 .header {
-    background-color: #36311F; /* Dark blue */
+    background-color: rgba(0, 0, 0, 0); /* Dark blue */
     padding: 20px 10px;
-    text-align: center;
+    width: 100%;
+    max-height: 50px ;
     color: white;
-    border-bottom: 3px solid #59544B;
     direction: rtl;
+    z-index: 0;
+    position: fixed;
   }
   
   .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
   }
+
   
   .nav-links {
     list-style: none;
@@ -24,7 +32,7 @@
   }
   
   .nav-link {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
@@ -32,32 +40,25 @@
   }
   
   .nav-link:hover {
-    color: #cfe2f3;
+    color: #cbba84;
   }
+
   
   /* Responsive styles for smaller screens */
-  @media (max-width: 768px) { /* Tablets and smaller */
-    .nav-links {
-      flex-direction: column; /* Stack links vertically */
-      
+  @media (max-width: 915PX) { /* Tablets and smaller */
+    #logoUl{
+      display: none;
     }
-  
-    .nav-links li {
-      margin: 10px 0; /* Add space between links */
+
+    .nav{
+      grid-template-columns: 1fr;
     }
-  
-    .nav-link {
-      font-size: 1em; /* Slightly smaller font for mobile */
-    }
-  }
-  
-  @media (max-width: 480px) { /* Phones */
-    .header {
-      padding: 15px 5px; /* Reduce padding for smaller screens */
-    }
-  
-    .nav-link {
-      font-size: 0.9em; /* Further reduce font size for phones */
+
+    .nav-link{
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
     }
   }
+
   

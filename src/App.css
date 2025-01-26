@@ -1,4 +1,9 @@
-/* Basic styling for the layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  scroll-behavior: smooth;
+}
 header {
   background-color: #333;
   color: white;
@@ -21,20 +26,164 @@ header nav ul li a {
   text-decoration: none;
 }
 
+.main-page-content{
+  background-image: url("./Lawyer4.jpg");
+  object-fit: contain;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  grid-template-rows: 3fr 1fr;
+
+  height: 100vh;
+}
+
+.main-page-content-header p{
+  color: #cbba84;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+/* contact us section css */
+
+.contact-us-section{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  justify-content: center;
+  justify-items: center;
+}
+
+.contact-us-section-header{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+.contact-us-section-header h2{
+  color: #cbba84 ;
+}
+
+.contact-us-section-content{
+  width: 100%;
+  height: 100%;
+}
+
+.content-client-infoInput{
+  width: 100%;
+  display: grid;  
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+
+}
+
+.content-client-infoInput input{
+  background-color: #e7e7e7;
+  color: black;
+  min-width: 400px;
+  height: 40px;
+  margin: 20px;
+  text-align: right;
+  padding-right: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+
+.content-client-msgInput{
+  width: 100%;
+  display: grid;
+}
+
+.content-client-msgInput input{
+  background-color: #e7e7e7;
+  color: black;
+  min-width: 400px;
+  height: 40px;
+  margin: 20px;
+  text-align: right;
+  padding-right: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+
+.send-button{
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.send-button button{
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: #cbba84;
+  background-color: black;
+  font-size: 18px;
+  font-weight: bold;
+  transition: ease all 0.2s;
+}
+
+.send-button button:hover{
+  background-color: #cbba84;
+  color: black;
+  cursor: pointer;
+}
+
+.main-page-content-footer{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.content {
+  background-color: #e0e6f5;
+}
+
+h1 {
+  text-align: center;
+}
+
 footer {
   background-color: #333;
   color: white;
   padding: 20px;
   text-align: center;
-  position: fixed;
   width: 100%;
   bottom: 0;
 }
 
-.content {
-  margin-bottom: 80px; /* Make room for footer */
+
+@media (max-width: 950px) {
+  .main-page-content-header p{
+    font-size: 2rem ;
+  }
+
+  .content-client-infoInput{
+    grid-template-columns: 1fr;
+  }
 }
 
-h1 {
-  text-align: center;
+
+@media (max-width: 480px) {
+  .main-page-content-header p{
+    font-size: 2rem ;
+  }
+
+  .content-client-infoInput input{
+    min-width: 200px;
+  }
+
+  .content-client-msgInput input{
+    min-width: 200px;
+  }
 }

@@ -1,10 +1,10 @@
 .footer {
-    background-color: #36311F; /* Dark blue for professional look */
+  background-image: url("./Footer1.jpg");
     color: white;
     text-align: center;
     direction: rtl; /* Set direction to right-to-left */
     padding: 20px;
-    border-top: 3px solid #59544B; /* Gold border for emphasis */
+    border-top: 3px solid #cfe2f3; /* Gold border for emphasis */
   }
   
   .footer p {

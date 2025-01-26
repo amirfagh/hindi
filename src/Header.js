@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+
 import './Header.css';
 
 function Header() {
@@ -7,9 +8,12 @@ function Header() {
     <header className="header">
       <nav className="nav">
         <ul className="nav-links">
-        
-          <li><Link to="/" className="nav-link">المحامي محمد هندي</Link></li>
-          <li><Link to="/page2" className="nav-link">مجالات تخصصنا</Link></li>
+          <li><a href='#our-specialization' className="nav-link">مجالات تخصصنا</a></li>
+          <li><a href='#who-are-we' className="nav-link">من نحن</a></li>
+          <li><a href='#contact-us' className="nav-link">تواصل معنا</a></li>
+        </ul>
+        <ul id='logoUl' className="nav-links">
+            <li><a href='#header' className="nav-link">مكتب المحامي محمد هندي</a></li>
         </ul>
       </nav>
     </header>
