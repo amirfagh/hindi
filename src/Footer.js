@@ -21,6 +21,7 @@ function Footer() {
       </p>
       <p>العنوان: شارع ابن سينا 5 ، القدس</p>
       <p>ساعات الدوام: السبت – الخميس 8:00 – 16:00</p>
+      <p>Created by Amir Ghareeb && Designed by Ahmad Kawasme</p>
     </footer>
   );
 }
