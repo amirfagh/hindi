@@ -88,20 +88,13 @@ function App() {
             </div>
             <div className='content-client-msgInput'>
               <input
-                type='email'
-                name='email'
-                placeholder='البريد الألكتروني'
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-              />
-              <textarea
                 name='message'
                 placeholder='اكتب رسالتك هنا'
                 value={formData.message}
                 onChange={handleInputChange}
-                required
+                
               />
+            
             </div>
             <div className='send-button'>
               <button type='submit'>ارسال</button>

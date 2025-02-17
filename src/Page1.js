@@ -1,6 +1,6 @@
 import React from 'react';
 import './Page1.css';
-import lawyerCartoon from './LawyerCartoon.jpg'
+import lawyerCartoon from './hindii.jpg'
 
 function Page1() {
   return (
